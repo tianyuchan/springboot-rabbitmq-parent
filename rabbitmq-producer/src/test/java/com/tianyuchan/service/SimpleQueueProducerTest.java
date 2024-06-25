@@ -16,13 +16,18 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = SpringbootRabbitmqProducerApplication.class)
-public class TestSimpleQueueProducer {
+public class SimpleQueueProducerTest {
 
     @Resource
     private SimpleQueueProducer simpleQueueProducer;
 
     @Test
     public void send() {
-        simpleQueueProducer.send();
+        simpleQueueProducer.send("Hello World");
     }
+
 }
+
+/** 简单模式下，单一接收端接收消息
+ * ====接收消息====>Hello World
+ */

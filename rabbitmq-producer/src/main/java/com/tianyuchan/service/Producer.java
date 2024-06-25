@@ -13,5 +13,5 @@ public interface Producer {
     /**
      * 发送消息
      */
-    void send();
+    void send(String msg);
 }
