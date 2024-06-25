@@ -19,7 +19,7 @@ public class PublishAndSubscribeConsumer implements Consumer {
     @Override
     @RabbitHandler
     public void handle(String msg) {
-        System.out.println("====发布订阅模式消息接收端1====>" + msg);
+        System.out.println("====发布订阅模式消息接收端1====>" + msg + "fanout_queue1");
     }
 
 }

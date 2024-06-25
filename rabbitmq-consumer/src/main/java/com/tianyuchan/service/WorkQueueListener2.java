@@ -18,7 +18,7 @@ public class WorkQueueListener2 implements Consumer {
     @Override
     @RabbitHandler
     public void handle(String msg) {
-        System.out.println("====工作队列模式消息接收端2====>" + msg);
+        System.out.println("====工作队列模式消息接收端2====>" + msg + "work_queue");
     }
 
 }

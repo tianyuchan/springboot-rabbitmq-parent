@@ -4,15 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb16487-d8a7-43d1-a826-bf1736242ed6" name="Changes" comment="02 工作队列模式">
-      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/PublishAndSubscribeProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/PublishAndSubscribeProducerTest.java" afterDir="false" />
+    <list default="true" id="cdb16487-d8a7-43d1-a826-bf1736242ed6" name="Changes" comment="03 发布订阅模式">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/主题模式.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/发布订阅模式.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/工作队列.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/简单模式.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/路由模式.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/RoutingModeConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/RoutingModeConsumer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/TopicModeConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/TopicModeConsumer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/RoutingModeProducerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/TopicModeProducerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/SimpleQueueListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/SimpleQueueListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/WorkQueueListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/WorkQueueListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/WorkQueueListener2.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/WorkQueueListener2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/WorkQueueProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/WorkQueueProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/Producer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/PublishAndSubscribeProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/SimpleQueueProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/WorkQueueProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/PublishAndSubscribeProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/PublishAndSubscribeProducerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/SimpleQueueProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/SimpleQueueProducerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/WorkQueueProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/WorkQueueProducerTest.java" afterDir="false" />
     </list>
@@ -34,6 +50,9 @@
   </component>
   <component name="KubernetesApiPersistence">
     <option name="context" value="docker-desktop" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -68,7 +87,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/cty/java/project/springboot-rabbitmq-parent/rabbitmq-consumer/src/main/resources",
+    "last_opened_file_path": "/Users/cty/java/project/springboot-rabbitmq-parent/doc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +97,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "065fc4890ac792a35b14494800f5fca5",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -86,6 +106,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/doc" />
       <recent name="$PROJECT_DIR$/rabbitmq-consumer/src/main/resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -105,22 +126,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PublishAndSubscribeProducerTest">
-    <configuration name="PublishAndSubscribeProducerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rabbitmq-producer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tianyuchan.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tianyuchan.service" />
-      <option name="MAIN_CLASS_NAME" value="com.tianyuchan.service.PublishAndSubscribeProducerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TopicModeProducerTest.send">
     <configuration name="PublishAndSubscribeProducerTest.send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rabbitmq-producer" />
       <extension name="coverage">
@@ -131,6 +137,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tianyuchan.service" />
       <option name="MAIN_CLASS_NAME" value="com.tianyuchan.service.PublishAndSubscribeProducerTest" />
+      <option name="METHOD_NAME" value="send" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoutingModeProducerTest.send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tianyuchan.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tianyuchan.service" />
+      <option name="MAIN_CLASS_NAME" value="com.tianyuchan.service.RoutingModeProducerTest" />
       <option name="METHOD_NAME" value="send" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -153,6 +175,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TopicModeProducerTest.send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rabbitmq-producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tianyuchan.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tianyuchan.service" />
+      <option name="MAIN_CLASS_NAME" value="com.tianyuchan.service.TopicModeProducerTest" />
+      <option name="METHOD_NAME" value="send" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WorkQueueProducerTest.send" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rabbitmq-producer" />
       <extension name="coverage">
@@ -169,26 +207,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringbootRabbitmqConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="rabbitmq-consumer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tianyuchan.start.SpringbootRabbitmqConsumerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tianyuchan.start.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PublishAndSubscribeProducerTest" />
+        <item itemvalue="JUnit.TopicModeProducerTest.send" />
+        <item itemvalue="JUnit.RoutingModeProducerTest.send" />
         <item itemvalue="JUnit.PublishAndSubscribeProducerTest.send" />
         <item itemvalue="JUnit.WorkQueueProducerTest.send" />
         <item itemvalue="JUnit.SimpleQueueProducerTest.send" />
-        <item itemvalue="Spring Boot.SpringbootRabbitmqConsumerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +225,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719234255553</updated>
-      <workItem from="1719234256596" duration="10847000" />
+      <workItem from="1719234256596" duration="11274000" />
+      <workItem from="1719327474066" duration="6668000" />
     </task>
     <task id="LOCAL-00001" summary="01 简单模式">
       <option name="closed" value="true" />
@@ -218,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719291831047</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="03 发布订阅模式">
+      <option name="closed" value="true" />
+      <created>1719327306834</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719327306834</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,17 +273,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="01 简单模式" />
     <MESSAGE value="02 工作队列模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="02 工作队列模式" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/SimpleQueueProducerTest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="03 发布订阅模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="03 发布订阅模式" />
   </component>
 </project>

@@ -5,21 +5,20 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 /**
- * SimpleQueueListener
- * 1.简单模式——接收消息
+ * TopicModeConsumer
+ * 5.主题模式——消息接收端1
  *
  * @author tianyuchan
- * @since 2024/6/24
+ * @since 2024/6/25
  */
 
 @Component
-@RabbitListener(queues = "simple_queue")
-public class SimpleQueueListener implements Consumer {
-
+@RabbitListener(queues = "topic_queue1")
+public class TopicModeConsumer implements Consumer {
 
     @Override
     @RabbitHandler
     public void handle(String msg) {
-        System.out.println("====简单模式接收消息端====>" + msg + "simple_queue");
+        System.out.println("====主题模式消息接收端1====>" + msg + "topic_queue1");
     }
 }
