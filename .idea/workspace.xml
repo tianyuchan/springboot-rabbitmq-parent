@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb16487-d8a7-43d1-a826-bf1736242ed6" name="Changes" comment="03 发布订阅模式">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/主题模式.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/发布订阅模式.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/工作队列.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/简单模式.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/路由模式.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/RoutingModeConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/RoutingModeConsumer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/TopicModeConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/TopicModeConsumer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/RoutingModeProducerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/TopicModeProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/PublishAndSubscribeConsumer2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/SimpleQueueListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/SimpleQueueListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/WorkQueueListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/WorkQueueListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/WorkQueueListener2.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-consumer/src/main/java/com/tianyuchan/service/WorkQueueListener2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/Producer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/PublishAndSubscribeProducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/SimpleQueueProducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/main/java/com/tianyuchan/service/WorkQueueProducer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/PublishAndSubscribeProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/PublishAndSubscribeProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/SimpleQueueProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/SimpleQueueProducerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/WorkQueueProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rabbitmq-producer/src/test/java/com/tianyuchan/service/WorkQueueProducerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="cdb16487-d8a7-43d1-a826-bf1736242ed6" name="Changes" comment="04 路由模式&#10;05 主题模式" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,7 +199,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719234255553</updated>
       <workItem from="1719234256596" duration="11274000" />
-      <workItem from="1719327474066" duration="6668000" />
+      <workItem from="1719327474066" duration="7411000" />
     </task>
     <task id="LOCAL-00001" summary="01 简单模式">
       <option name="closed" value="true" />
@@ -252,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719327306834</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="04 路由模式&#10;05 主题模式">
+      <option name="closed" value="true" />
+      <created>1719334879286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719334879286</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +255,7 @@
     <MESSAGE value="01 简单模式" />
     <MESSAGE value="02 工作队列模式" />
     <MESSAGE value="03 发布订阅模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="03 发布订阅模式" />
+    <MESSAGE value="04 路由模式&#10;05 主题模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="04 路由模式&#10;05 主题模式" />
   </component>
 </project>
