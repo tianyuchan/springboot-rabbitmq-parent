@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * WorkQueueListener
- * 1.简单队列模式——接收消息
+ * 2.工作队列模式——消息接收端1
  *
  * @author tianyuchan
  * @since 2024/6/25
@@ -18,6 +18,7 @@ public class WorkQueueListener implements Consumer {
     @Override
     @RabbitHandler
     public void handle(String msg) {
-        System.out.println("====工作队列消息接收端1====>" + msg);
+        System.out.println("====工作队列模式消息接收端1====>" + msg);
     }
+
 }

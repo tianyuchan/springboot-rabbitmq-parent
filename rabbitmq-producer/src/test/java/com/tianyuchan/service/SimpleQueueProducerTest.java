@@ -19,15 +19,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class SimpleQueueProducerTest {
 
     @Resource
-    private SimpleQueueProducer simpleQueueProducer;
+    private SimpleQueueProducer producer;
 
     @Test
     public void send() {
-        simpleQueueProducer.send("Hello World");
+        producer.send("Hello World");
     }
 
 }
 
 /** 简单模式下，单一接收端接收消息
- * ====接收消息====>Hello World
+ * ====简单模式接收消息端====>Hello World
  */

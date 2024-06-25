@@ -5,21 +5,22 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
 /**
- * WorkQueueProducer
- * 2.工作队列模式——发送消息
+ * PublishAndSubscribeProducer
+ * 3.发布订阅模式——发送消息（广播到绑定到交换机的队列）
  *
  * @author tianyuchan
  * @since 2024/6/25
  */
+
 @Service
-public class WorkQueueProducer implements Producer {
+public class PublishAndSubscribeProducer implements Producer {
 
     @Resource
     private RabbitTemplate rabbitTemplate;
 
     @Override
     public void send(String msg) {
-        String queue = "work_queue";
-        rabbitTemplate.convertAndSend(queue, msg);
+        String exchange = "fanout_exchange";
+        rabbitTemplate.convertAndSend(exchange, "", msg);
     }
 }
